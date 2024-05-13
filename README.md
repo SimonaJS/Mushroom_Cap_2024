@@ -30,7 +30,7 @@ Source: https://huggingface.co/
 * Computation of Cramer's V, chi-square tests, and phi-coefficient to assess variable associations.
 
 ### Predictive Modeling
-The predictive modeling process involves training a logistic regression model to classify mushrooms as poisonous or edible based on their characteristics. The model is evaluated using metrics such as accuracy, precision, recall, and F1-score, with iterative improvements made as necessary.
+The predictive modeling process involves training a logistic regression model to classify mushrooms as poisonous or edible based on their characteristics. Remarkably, the model achieved perfect accuracy on both the training and test datasets, suggesting strong predictive capabilities. However, further evaluation using techniques such as cross-validation, confusion matrix analysis, and ROC curve analysis revealed insights into the model's performance and potential areas for improvement.
 
 ### Impact
 The project aims to have the following impacts:
