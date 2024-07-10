@@ -1,4 +1,5 @@
-# Predicting Mushroom Toxicity Using Machine Learning 
+# Predictive Modeling for Mushroom Poisoning: 
+# A Data-Driven Approach to Enhance Public Safety
 
 ### Overview
 
@@ -44,6 +45,36 @@ mushroom classification.
 * Dropped 5 variables with excessive missing values
 
 * Imputation with mode. 
+
+### Data Dictionary 
+
+| Feature             | Type                  | Description                                           | Values                                                                                                                                                    |
+|---------------------|-----------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| cap_color           | Categorical variable  | Represents the color of the mushroom cap              | n: brown, b: buff, g: gray, r: green, p: pink, u: purple, e: red, w: white, y: yellow, l: blue, o: orange, k: black                                        |
+| cap_diameter        | Numerical variable     | Represents the diameter of the mushroom cap in centimeters | type: float                                                                                                                                               |
+| cap_shape           | Categorical variable  | Represents the shape of the mushroom cap              | b: bell, c: conical, x: convex, f: flat, s: sunken, p: spherical, o: others                                                                               |
+| cap_surface         | Categorical variable  | Represents the surface texture of the mushroom cap    | i: fibrous, g: grooves, y: scaly, s: smooth, h: shiny, l: leathery, k: silky, t: sticky, w: wrinkled, e: fleshy                                            |
+| class               | Binary class label    | Indicates whether the mushroom is edible or poisonous | e: edible, p: poisonous                                                                                                                                    |
+| does_bruise_or_bleed| Categorical variable  | Indicates whether the mushroom bruises or bleeds      | t: bruises or bleeding, f: no                                                                                                                             |
+| gill_attachment     | Categorical variable  | Represents the attachment of the mushroom gills       | a: adnate, x: adnexed, d: decurrent, e: free, s: sinuate, p: pores, f: none, ?: unknown                                                                    |
+| gill_color          | Categorical variable  | Represents the color of the mushroom gills            | n: brown, b: buff, g: gray, r: green, p: pink, u: purple, e: red, w: white, y: yellow, l: blue, o: orange, k: black, f: none                              |
+| gill_spacing        | Categorical variable  | Represents the spacing of the mushroom gills          | c: close, d: distant, f: none                                                                                                                             |
+| habitat             | Categorical variable  | Represents the habitat where the mushroom is found    | g: grasses, l: leaves, m: meadows, p: paths, h: heaths, u: urban, w: waste, d: woods                                                                      |
+| has_ring            | Categorical variable  | Indicates whether the mushroom has a ring             | t: ring, f: none                                                                                                                                          |
+| ring_type           | Categorical variable  | Represents the type of ring on the mushroom           | c: cobwebby, e: evanescent, r: flaring, g: grooved, l: large, p: pendant, s: sheathing, z: zone, y: scaly, m: movable, f: none, ?: unknown                |
+| season              | Categorical variable  | Represents the season when the mushroom is found      | s: spring, u: summer, a: autumn, w: winter                                                                                                                 |
+| spore_print_color   | Categorical variable  | Represents the color of the mushroom's spore print    | same as cap_color                                                                                                                                          |
+| stem_color          | Categorical variable  | Represents the color of the mushroom stem             | same as cap_color + f: none                                                                                                                                |
+| stem_height         | Numerical variable      | Represents the height of the mushroom stem in centimeters | type: float                                                                                                                                               |
+| stem_root           | Categorical variable  | Represents the root type of the mushroom stem         | b: bulbous, s: swollen, c: club, u: cup, e: equal, z: rhizomorphs, r: rooted                                                                               |
+| stem_surface        | Categorical variable  | Represents the surface texture of the mushroom stem   | same as cap_surface + f: none                                                                                                                              |
+| stem_width          | Numerical variable     | Represents the width of the mushroom stem in millimeters | type: float                                                                                                                                               |
+| veil_color          | Categorical variable  | Represents the color of the veil                      | same as cap_color + f: none                                                                                                                                |
+| veil_type           | Categorical variable  | Represents the type of veil on the mushroom           | p: partial, u: universal                                                                                                                                  |
+
+
+
+
 
 Source: https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset
 
